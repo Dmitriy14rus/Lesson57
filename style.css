@@ -1,0 +1,39 @@
+body {
+    background: rgb(77, 64, 64);
+    color: aliceblue;
+    font-size: 60px;
+    font-family: arial black;
+}
+
+.title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title::before {
+    content: '';
+    display: flex;
+    border-radius: 100%;
+    border: 5px solid rgb(143, 137, 137);
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    position: absolute;
+    left: 30%;
+    top: 40px;
+}
+
+.title::after {
+    content: '';
+    display: flex;
+    border-radius: 100%;
+    border: 5px solid rgb(143, 137, 137);
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative;
+    position: absolute;
+    right: 30%;
+    top: 40px;
+}
